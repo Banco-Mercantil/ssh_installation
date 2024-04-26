@@ -44,7 +44,7 @@ Você será redirecionado para o portal de acesso da *AWS*. Na guia **Accounts**
 
 <img width="322" alt="image" src="https://github.com/Banco-Mercantil/ssh_installation/assets/88452990/8e7b7978-469e-4a3d-b67a-f22534d83aa5">
 
-A etapa seguinte envolve a cofiguração a IDE Visual Studio Code, previamente instalada na máquina. Abra a IDE, no canto inferior esquerdo, há um ícone com duas setas de *maior e menor que* (><), selecione este para abrir uma janela remota. 
+A etapa seguinte envolve a cofiguração a *IDE* **Visual Studio Code**, previamente instalada na máquina. Abra a IDE, no canto inferior esquerdo, há um ícone com duas setas de *maior e menor que* (><), selecione este para abrir uma janela remota. 
 
 Um pop-up será aberto e nele basta selecionar a opção **SSH** para abrir uma janela remota
 
