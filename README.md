@@ -40,7 +40,7 @@ site: <https://d-946713d8eb.awsapps.com/start/#/?tab=accounts>
 usuario: B045523@mercantil.com.br
 senha: XXXXXX
 
-Você será redirecionado para o portal de acesso da AWS. Na guia **Accounts**, caso seu acesso já tenha sido liberado, constará uma conta com o nome **Realtime Analytics - DEV**, em seguida, clique nela. O acesso concedido deverá ser o de administrador (adm), como na imagem a seguir:
+Você será redirecionado para o portal de acesso da *AWS*. Na guia **Accounts**, caso seu acesso já tenha sido liberado, constará uma conta com o nome **Realtime Analytics - DEV**, em seguida, clique nela. O acesso concedido deverá ser o de administrador (adm), como na imagem a seguir:
 
 <img width="322" alt="image" src="https://github.com/Banco-Mercantil/ssh_installation/assets/88452990/8e7b7978-469e-4a3d-b67a-f22534d83aa5">
 
