@@ -74,6 +74,7 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 unzip awscliv2.zip
 sudo ./aws/install --update
 ``
+
 Ao executar a ultima linha de comando, o sistema irá solicitar a senha do **SSH**, esta que foi enviada via e-mail, após digita-lá, dê o **Enter**.
 
 Agora execute o comando ``aws configure sso ``, em seguida, dê o **Enter**. O sistema irá solicitar um nome para a seção, digite o seu nome seguido por *_airflow*, ``nome_airflow``.
