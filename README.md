@@ -10,7 +10,7 @@ Feito isso, você irá precisar de um cliente SSH, ou seja, um terminal capaz de
 
 ## 🔨 Ferramentas Necessárias:
 
-Para iniciar este projeto sera necessária a instalação da IDE Visual Studio Code e das seguintes extensões, respectivamente:
+Para iniciar este projeto sera necessária a instalação da *IDE* **Visual Studio Code** e das seguintes extensões, respectivamente:
 
 - [Visual Studio Code](https://code.visualstudio.com/download)
 - Remote - SSH
