@@ -25,6 +25,12 @@ Você irá necessitar de um usuário e uma senha habilitados via SSH. Esta solic
 - Devops 
 - Airflow
 
+## Material de apoio:
+
+O presente projeto foi instruido pelo seguinte vídeo de apoio:
+
+- [Vídeo de apoio](https://drive.google.com/file/d/1FkLRae6Uvmk1B2pc-OU-ICGtHbF5Q7cS/view)
+
 ## 🚀 Instalação do SSH e configuração da AWS S3 LS:
 
 Para iniciar o processo de instalação e configuração do nosso ambiente, é necessário acessar o seguinte site da AWS com seu usuário e senha da rede.
@@ -115,17 +121,68 @@ git config --global user.email "nome.ultimonome@mercantil.com.br"
 
 ## 🚀 Clonagem do repositório do Airflow:
 
-Nesta fase, iremos fazer o clone do repositório do Airflow. Para isso, baixe os arquivos de configuração em sua máquina local.
+Nesta fase, iremos fazer o clone do repositório do Airflow. Para isso, baixe os arquivos de configuração do Git, os quais constam neste projeto, em sua máquina local.
+
 - bash_export.sh
 - build_push_dev.sh
 
-ainda no terminal, digite:
+Com os arquivos baixados, cole-os na pasta raiz do projeto no **Visual Studio Code**, de forma que sua arquitetura de pastas fique como na imagem a seguir:
+
+<img width="129" alt="image" src="https://github.com/Banco-Mercantil/ssh_installation/assets/88452990/bc9756e1-b42f-4195-83fa-38771f36084a">
+
+Vá para o seguinte caminho: */.aws/config*, copie o trecho de cógido do parâmetro ``profile``.
+
+<img width="227" alt="image" src="https://github.com/Banco-Mercantil/ssh_installation/assets/88452990/6a544b8e-ad29-4b63-abac-a1ff372af9df">
+
+Abra o arquivo *bash_export.sh* e substitua o valor do parâmetro ``AWS_PROFILE`` pelo valor que você obteve da pasta acima.
+
+<img width="275" alt="image" src="https://github.com/Banco-Mercantil/ssh_installation/assets/88452990/406e73bb-092e-4a4b-b2a6-b0963d96292d">
+
+Salve as alterações com o comando ``Ctrl + S``.
+
+Agora, renomeio o arquivo *bash_export.sh* para *.bash_export.sh*. Na sequência, entre no arquivo *.bashrc*, role para o final do código e acrescente o seguinte trecho:
+``
+if [ -f ~/.bash_export.sh ] ; then
+ . ~/.bash_export.sh
+fi
+``
+Salve as alterações com o comando ``Ctrl + S``.
+
+Abra o arquivo *.gitconfig*. Neste, no paramêtro ``[credential]``, acrescente a seguinte linha de código:
+``
+UseHttpPath = true
+``
+Já no paramêtro ``[user]``, acrescente o nome e email do seu usuário:
+``
+name: nome.ultimonome
+email:nome.ultimonome@mercantil.com.br
+``
+Salve as alterações com o comando ``Ctrl + S``.
+
+<img width="247" alt="image" src="https://github.com/Banco-Mercantil/ssh_installation/assets/88452990/72f9d2cc-bc23-4cd4-80d2-1a346f25b2d7">
+
+Feche o terminal clicando no ícone da lixeira e abra um novo com o comando ``Ctrl + '``, digite:
 ``
 aws sso login
+``
+Todas as vezes que se desejar alterar qualquer coisa, como enviar uma *DAG* para o **Airflow**, é necessário estar logado para que o sistema reconheça você como usuário com os respectivos acessos para realizar modificações.
+
+Um pop-up será exibido, e nele, clique o botão **Abrir**.
+
+<img width="292" alt="image" src="https://github.com/Banco-Mercantil/ssh_installation/assets/88452990/bad2ea14-77a8-422d-8a16-b6402388a3b6">
+
+Nesta etapa, o sistema irá abrir um navegador da **AWS**, cliquei no botão **Confirm and continue** para seguir. Na sequência clique em **Allow access**, ao final você deverá receber esta mensagem:
+
+<img width="329" alt="image" src="https://github.com/Banco-Mercantil/ssh_installation/assets/88452990/e14052ca-0c29-4cbe-abb6-8fc0f32b4f79">
+
+Retorne ao **Visual Studio Code** e, no terminal, informe a seguinte linha de comando:
+``
 git clone https://git-codecommit.us-east-2.amazonaws.com/v1/repos/airflow-repository-is8vtfi0
 ``
 
+Seu terminal deverá exibir a mensagem de sucesso como da imagem a seguir:
 
+<img width="422" alt="image" src="https://github.com/Banco-Mercantil/ssh_installation/assets/88452990/2b2aa8c1-6774-4ff2-bde9-271cb76faec7">
 
 
 
