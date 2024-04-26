@@ -1,4 +1,4 @@
-# Instalação e configuração do SSH em uma máquina local:
+# Instalação e configuração do SSH:
 
 O real objetivo deste trabalho é demonstrar, passo a passo, como configurar o seu ambiente para utilizar o SSH em uma conexão remota.
 
