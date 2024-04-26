@@ -29,7 +29,7 @@ Você irá necessitar de um usuário e uma senha habilitados via SSH. Esta solic
 
 O presente projeto foi instruido pelo seguinte vídeo de apoio:
 
-- [Vídeo de apoio](https://drive.google.com/file/d/1FkLRae6Uvmk1B2pc-OU-ICGtHbF5Q7cS/view)
+- [Vídeo de apoio](https://drive.google.com/file/d/1FkLRae6Uvmk1B2pc-OU-ICGtHbF5Q7cS/view?usp=sharing)
 
 ## 🚀 Instalação do SSH e configuração da AWS S3 LS:
 
