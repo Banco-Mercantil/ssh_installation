@@ -68,6 +68,7 @@ O sistema agora irá lhe pedir a senha do **SSH** que você gerou em sua máquin
 <img width="458" alt="image" src="https://github.com/Banco-Mercantil/ssh_installation/assets/88452990/55aac0ab-3324-4093-89f9-c58fa1c7b30a">
 
 Feito as configurações, vamos abrir o terminal pelo atalho ``Ctrl + '``. Digite e execute as seguintes linhas de comando uma a uma, respectivamente:
+
 ``
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
